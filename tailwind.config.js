@@ -7,6 +7,13 @@ export default {
   theme: {
     extend: {},
   },
+  theme: {
+    extend: {
+      fontFamily: {
+        secondary: ['"Ultra"', "serif"],
+      },
+    },
+  },
   plugins: [],
 }
 

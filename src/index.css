@@ -14,3 +14,90 @@
     @apply rounded-3xl bg-[#e6a5cb] px-4 py-2 font-semibold uppercase text-black shadow-md hover:bg-[#e6a5cb]/90 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-75;
   }
 }
+
+@layer base {
+  .font-outline {
+    text-shadow:
+      -1px -1px 0 rgba(255, 255, 255, 0.3),
+      1px -1px 0 rgba(255, 255, 255, 0.3),
+      -1px 1px 0 rgba(255, 255, 255, 0.3),
+      1px 1px 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .transition-long {
+    transition: all 1s;
+  }
+}
+
+@keyframes transitionDecoration1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionDecoration2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  70% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionCan {
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-200%) translateX(-50%);
+  }
+  80% {
+    transform: translateY(10%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes transitionBg {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.transition-decoration-1 {
+  animation: 1s transitionDecoration1;
+}
+
+.transition-decoration-2 {
+  animation: 1s transitionDecoration2;
+}
+
+.transition-can {
+  animation: 1s transitionCan;
+}
+
+.transition-bg {
+  animation: 1s transitionBg;
+}
