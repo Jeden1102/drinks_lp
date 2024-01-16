@@ -101,3 +101,12 @@
 .transition-bg {
   animation: 1s transitionBg;
 }
+
+.text-cta::before {
+  content: url("../public/wave.svg");
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: calc(100% - 10px);
+  max-height: 400px;
+}
