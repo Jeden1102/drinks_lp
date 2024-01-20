@@ -110,3 +110,16 @@
   bottom: calc(100% - 10px);
   max-height: 400px;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animation-scroll {
+  animation: scroll 10s linear infinite;
+}
