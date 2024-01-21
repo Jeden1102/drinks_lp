@@ -14,7 +14,18 @@ function HomePage() {
         <TextCta />
       </PageSection>
       <PageSection sectionId="about">
-        <InfiniteText text="Low calories * No added sugar * Low calories * No added sugar"/>
+        <div className="bg-[#FFF6E0] pb-4 overflow-hidden">
+        <InfiniteText
+          text="Low calories * No added sugar * Low calories * No added sugar"
+          variant={"primary"}
+          rotate={"bottom"}
+        />
+        <InfiniteText
+          text="Low calories * No added sugar * Low calories * No added sugar"
+          variant={"secondary"}
+          rotate={"top"}
+        />
+        </div>
       </PageSection>
     </div>
   );

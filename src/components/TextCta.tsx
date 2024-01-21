@@ -2,10 +2,10 @@ import Decoration from "../assets/icons/decoration.svg";
 
 function TextCta() {
   return (
-    <div className="text-cta relative flex justify-center bg-[#FFF6E0] py-20">
-      <div className="relative flex w-3/5 flex-col gap-10">
+    <div className="text-cta relative flex justify-center bg-[#FFF6E0] pb-8 md:py-20">
+      <div className="relative flex w-4/5 flex-col gap-10 md:w-3/5">
         <img src={Decoration} alt="Decoration image" className="h-40" />
-        <p className="text-center font-secondary text-7xl font-bold">
+        <p className="text-center font-secondary text-4xl font-bold md:text-7xl">
           Your Trusted Source for Delicious, Healthy Drinks.
         </p>
         <p className="text-center">
