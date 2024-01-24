@@ -29,6 +29,8 @@ const slides = [
     bg: OrangeBg,
     can: OrangeCan,
     bgColor: "#FB924E",
+    name: "Orange Turmeric Elixir",
+    price: 5.99,
   },
   {
     decoration1: PurpleDecoration1,
@@ -36,6 +38,8 @@ const slides = [
     bg: PurpleBg,
     can: PurpleCan,
     bgColor: "#D798EB",
+    name: "Purple super juice",
+    price: 5.49,
   },
   {
     decoration1: PinkDecoration1,
@@ -43,6 +47,8 @@ const slides = [
     bg: PinkBg,
     can: PinkCan,
     bgColor: "#ea4c7f",
+    name: "Cherry-cherry lady",
+    price: 6.99,
   },
   {
     decoration1: RedDecoration1,
@@ -50,6 +56,8 @@ const slides = [
     bg: RedBg,
     can: RedCan,
     bgColor: "#ffa58d",
+    name: "Strawberries ice-cream",
+    price: 5.29,
   },
   {
     decoration1: YellowDecoration1,
@@ -57,6 +65,8 @@ const slides = [
     bg: YellowBg,
     can: YellowCan,
     bgColor: "#EDFA68",
+    name: "Cytrus Attack",
+    price: 4.99,
   },
 ];
 
