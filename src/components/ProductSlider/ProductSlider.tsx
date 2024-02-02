@@ -1,5 +1,6 @@
 import TextCta from "../TextCta";
 import "@splidejs/react-splide/css";
+// @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import ProductSliderSlide from "./ProductSliderSlide";
 import slides from "../HeroSlider/slides";
