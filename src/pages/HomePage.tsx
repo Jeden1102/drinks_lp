@@ -1,9 +1,13 @@
 import TheHeader from "../components/layout/TheHeader";
+import TheFooter from "../components/layout/TheFooter";
 import PageSection from "../components/layout/PageSection";
 import HeroSlider from "../components/HeroSlider/HeroSlider";
 import TextCta from "../components/TextCta";
 import InfiniteText from "../components/InfiniteText";
 import ProductSlider from "../components/ProductSlider/ProductSlider";
+import Testimontals from "../components/Testimontals/Testimontals";
+import Benefits from "../components/Benefits/Benefits";
+
 function HomePage() {
   return (
     <div>
@@ -38,6 +42,13 @@ function HomePage() {
       <PageSection sectionId="products">
         <ProductSlider />
       </PageSection>
+      <PageSection sectionId="testimontals">
+        <Testimontals />
+      </PageSection>
+      <PageSection sectionId="benefits">
+        <Benefits />
+      </PageSection>
+      <TheFooter />
     </div>
   );
 }

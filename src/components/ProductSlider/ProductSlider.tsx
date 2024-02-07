@@ -6,7 +6,7 @@ import ProductSliderSlide from "./ProductSliderSlide";
 import slides from "../HeroSlider/slides";
 function ProductSlider() {
   return (
-    <div className="py-8">
+    <div className="-mt-8 py-8">
       <TextCta
         headingText="Explore Our Wide Range of Healthy Drink Options"
         mainText="From refreshing waters to energizing smoothies, we have something for every taste and need"
@@ -18,11 +18,11 @@ function ProductSlider() {
             arrows: false,
             pagination: false,
             gap: "1rem",
-            autoWidth:true,
+            autoWidth: true,
           }}
         >
-          {slides.map((slide) => (
-            <SplideSlide>
+          {slides.map((slide, key) => (
+            <SplideSlide key={key}>
               <ProductSliderSlide product={slide} />
             </SplideSlide>
           ))}

@@ -7,6 +7,9 @@
   html {
     font-family: "Gruppo", sans-serif;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @layer components {
@@ -109,6 +112,17 @@
   left: 0;
   bottom: calc(100% - 10px);
   max-height: 400px;
+  @media (min-width: 1024px) {
+    max-height: 450px;
+  }
+}
+@media (min-width: 1400px) {
+  .text-cta::before {
+    max-height: 450px;
+  }
+}
+.text-cta--pink::before {
+  content: url("../public/wave-pink.svg");
 }
 
 @keyframes scroll {
