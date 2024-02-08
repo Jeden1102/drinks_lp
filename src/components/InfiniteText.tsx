@@ -39,7 +39,7 @@ const ScrollText: React.FC<ScrollTextProps> = ({ text, variant, rotate }) => {
     >
       <div className="scroll-text-content animation-scroll inline-block w-full whitespace-nowrap py-8 text-4xl">
         <p className="uppercase">
-          {new Array(3).fill("").map((str, key) => (
+          {new Array(3).fill("").map((_, key) => (
             <span key={key}>{text}</span>
           ))}
         </p>
