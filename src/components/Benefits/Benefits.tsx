@@ -4,7 +4,7 @@ function Benefits() {
   return (
     <div className="relative z-50 flex h-[400px] md:h-[600px]">
       <img
-        className="absolute left-0 top-0 -z-10 min-h-96 object-cover h-full"
+        className="absolute left-0 top-0 -z-10 min-h-96 object-cover h-full w-full"
         src={benefitsImage}
         alt="Juice being poured into a glass."
         width={1720}
