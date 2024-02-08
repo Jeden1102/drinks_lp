@@ -15,7 +15,7 @@ function TheHeader() {
         <a className="text-xl md:text-lg" href="#features">
           Features
         </a>
-        <a className="text-xl md:text-lg" href="#produts">
+        <a className="text-xl md:text-lg" href="#products">
           Products
         </a>
         <a className="text-xl md:text-lg" href="#testimontals">

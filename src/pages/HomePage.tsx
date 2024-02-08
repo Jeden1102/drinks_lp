@@ -15,7 +15,7 @@ function HomePage() {
       <PageSection sectionId="hero">
         <HeroSlider />
       </PageSection>
-      <PageSection sectionId="description">
+      <PageSection sectionId="features">
         <TextCta
           waved={true}
           headingText="Your Trusted Source for Delicious, Healthy Drinks."
