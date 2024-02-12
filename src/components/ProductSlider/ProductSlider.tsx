@@ -19,10 +19,16 @@ function ProductSlider() {
             pagination: false,
             gap: "1rem",
             autoWidth: true,
+            role: "Product images slider",
           }}
         >
           {slides.map((slide, key) => (
-            <SplideSlide key={key}>
+            <SplideSlide
+              key={key}
+              data-aos="fade-up"
+              data-aos-delay={key * 200}
+              data-aos-once="true"
+            >
               <ProductSliderSlide product={slide} />
             </SplideSlide>
           ))}

@@ -12,8 +12,9 @@ function TestimontalsSlide({ testimontal }: Props) {
   return (
     <div className="flex flex-col items-center justify-center gap-2">
       <div className="flex gap-2">
-        {new Array(testimontal.rating).fill("").map(() => (
+        {new Array(testimontal.rating).fill("").map((_, index) => (
           <img
+            key={index}
             src={starIcon}
             alt="Star icon"
             loading="lazy"

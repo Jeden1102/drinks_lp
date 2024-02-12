@@ -13,7 +13,14 @@ function ProductSliderSlide({ product }: Props) {
         className="flex items-center justify-center rounded-md p-4 md:p-12"
         style={{ backgroundColor: `${product.bgColor}95` }}
       >
-        <img src={product.can} alt="" className="h-96" />
+        <img
+          src={product.can}
+          alt="Product can image"
+          className="h-96"
+          loading="lazy"
+          width={249}
+          height={461}
+        />
       </div>
       <div className="p-4">
         <p className="text-3xl font-bold">{product.name}</p>

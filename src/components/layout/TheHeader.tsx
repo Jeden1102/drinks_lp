@@ -3,7 +3,7 @@ import { useState } from "react";
 function TheHeader() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   return (
-    <header className="fixed left-0 top-0 z-20 flex w-full items-center justify-between bg-black/40 px-4 py-4 text-white backdrop-blur-md md:px-20">
+    <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-black/40 px-4 py-4 text-white backdrop-blur-md md:px-20">
       <div>
         <a className="text-2xl font-bold" href="#">
           Juice Labs
@@ -21,12 +21,17 @@ function TheHeader() {
         <a className="text-xl md:text-lg" href="#testimontals">
           Testimontals
         </a>
-        <button className="btn-primary block md:hidden">Shop now</button>
+        <button title="Shop now" className="btn-primary block md:hidden">
+          Shop now
+        </button>
       </div>
       <div className="hidden md:block">
-        <button className="btn-primary">Shop now</button>
+        <button title="Shop now" className="btn-primary">
+          Shop now
+        </button>
       </div>
       <button
+        title="Shop now"
         className="z-10 block md:hidden"
         onClick={() => setIsMenuVisible(!isMenuVisible)}
       >
@@ -38,9 +43,9 @@ function TheHeader() {
           stroke={isMenuVisible ? "black" : "white"}
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>

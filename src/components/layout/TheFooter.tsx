@@ -16,7 +16,11 @@ const images = [image1, image2, image3, image4, image5, image6, image7, image8];
 function TheFooter() {
   return (
     <footer className="bg-[#EDFA68]">
-      <div className="flex w-full items-center justify-between p-4 md:p-8 lg:p-12">
+      <div
+        className="flex w-full items-center justify-between p-4 md:p-8 lg:p-12"
+        data-aos="fade-up"
+        data-aos-once="true"
+      >
         <p className="font-secondary  text-4xl">Say hey @Juicelabs</p>
         <span className="text-lg hover:underline">Follow</span>
       </div>
@@ -28,14 +32,21 @@ function TheFooter() {
           gap: "1rem",
           perPage: 1,
           autoWidth: true,
+          role: "Footer images slider",
         }}
       >
         {images.map((image, key) => (
-          <SplideSlide key={key}>
+          <SplideSlide
+            key={key}
+            data-aos="fade-up"
+            data-aos-delay={key * 200}
+            data-aos-once="true"
+          >
             <img
               className="h-72 w-72 object-cover"
               src={image}
-              alt=""
+              alt="Footer image"
+              loading="lazy"
               width={220}
               height={220}
             />

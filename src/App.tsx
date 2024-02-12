@@ -1,6 +1,9 @@
 import HomePage from "./pages/HomePage";
-function App() {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+function App() {
+  AOS.init()
   return (
     <>
         <HomePage/>
