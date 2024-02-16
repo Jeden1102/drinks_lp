@@ -23,7 +23,7 @@ function TestimontalsSlide({ testimontal }: Props) {
           />
         ))}
       </div>
-      <p className="my-2 text-center text-2xl font-bold">
+      <p className="my-2 text-center text-lg md:text-2xl font-bold">
         {testimontal.content}
       </p>
       <p className="text-lg italic">{testimontal.name}</p>
