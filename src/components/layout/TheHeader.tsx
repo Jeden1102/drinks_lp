@@ -12,13 +12,13 @@ function TheHeader() {
       <div
         className={`absolute right-0 top-0 flex h-screen w-full flex-col items-center justify-center gap-8 bg-white text-gray-600 transition-transform md:static md:flex  md:h-auto md:w-auto md:translate-x-0 md:flex-row md:bg-transparent md:text-white ${isMenuVisible ? "translate-x-0" : "translate-x-full"}`}
       >
-        <a className="text-xl md:text-lg" href="#features">
+        <a onClick={() => setIsMenuVisible(false)} className="text-xl md:text-lg" href="#features">
           Features
         </a>
-        <a className="text-xl md:text-lg" href="#products">
+        <a onClick={() => setIsMenuVisible(false)} className="text-xl md:text-lg" href="#products">
           Products
         </a>
-        <a className="text-xl md:text-lg" href="#testimontals">
+        <a onClick={() => setIsMenuVisible(false)} className="text-xl md:text-lg" href="#testimontals">
           Testimontals
         </a>
         <button title="Shop now" className="btn-primary block md:hidden">

@@ -18,7 +18,7 @@ function HeroSlider({
   };
 
   return (
-    <div className="absolute top-1/2 flex w-full justify-between px-2 z-50">
+    <div className="absolute top-1/2 flex w-full justify-between px-2 z-40">
       <button
         title="Go to previous slide"
         disabled={currentSlide === 0 || isBtnFreezed}
